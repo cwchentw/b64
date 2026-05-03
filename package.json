@@ -1,8 +1,12 @@
 {
+  "name": "b64",
   "type": "module",
+  "bin": {
+    "b64": "./dist/b64.js"
+  },
   "scripts": {
     "build": "tsc",
-    "prepublishOnly": "npm run build"
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "@types/node": "^25.6.0",
